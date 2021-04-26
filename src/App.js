@@ -1,29 +1,23 @@
-import {
-	BrowserRouter as Router,
-	Switch,
-	Route,
-	NavLink,
-} from "react-router-dom"
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 
 import Home from "./Pages/Home"
+import MovieDetails from "./Pages/MovieDetails"
+import NotFound from "./Pages/NotFound"
 
 function App() {
 	return (
 		<>
 			<Router>
-				<h1>Movies</h1>
-				{/* <NavLink exact to='/' activeClassName='active'>
-					Home
-				</NavLink> */}
 				<Switch>
 					<Route exact path='/'>
 						<Home></Home>
 					</Route>
-					<Route exact path='/movie/:id'>
-						movie id
+					<Route exact path='/movie/:movieID'>
+						<MovieDetails />
 					</Route>
-					<Route path='/movie'>movie</Route>
-					<Route path='*'>404</Route>
+					<Route path='*'>
+						<NotFound />
+					</Route>
 				</Switch>
 			</Router>
 		</>

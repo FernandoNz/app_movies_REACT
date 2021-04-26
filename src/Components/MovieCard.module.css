@@ -1,4 +1,6 @@
 .card {
+	width: 170px;
+	height: 340px;
 	display: block;
 	margin-bottom: 10px;
 	overflow: hidden;
@@ -10,8 +12,8 @@
 }
 
 .card img {
+	background: white;
 	border-radius: 5px 0px 0px 5px;
-	height: auto;
 	width: 100%;
 	display: block;
 }

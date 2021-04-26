@@ -28,3 +28,10 @@ export function getMovieDetails(id) {
 		.then(data => (data.ok ? data : Promise.reject(data)))
 		.catch(error => error)
 }
+
+export function getSearch(query) {
+	const URL = `${URL_BASE}search/movie?api_key=${API_KEY}&language=en-US&query=${query}&page=1`
+	return requestAPI(URL)
+		.then(data => (data.ok ? data : Promise.reject(data)))
+		.catch(error => error)
+}

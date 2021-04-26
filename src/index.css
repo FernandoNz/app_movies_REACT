@@ -18,7 +18,7 @@ body {
 		sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	background-color: #1a294e;
+	background-color: #000;
 	color: white;
 	font-family: var(--primary-font);
 	box-sizing: border-box;
@@ -47,4 +47,16 @@ h3 {
 
 li {
 	list-style: none;
+}
+
+a {
+	color: white;
+	text-decoration-line: none;
+}
+
+.loader_container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
 }
